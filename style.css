@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2ede8;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    display: block;
+    align-self: center;
+    padding-left: 100px;
+}
+.logo a{
+    font-size: 1em;
+    color: #725654;
+    width: 30vw;
+}
+
+.logo a img{
+    width: 60px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.menubar{
+    padding-right: 100px;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 2em; */
+}
+
+.list-items a{
+    display: flex;
+    align-items: center;
+    background-color: #f2ede8;
+    color: #725654;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    transition: 0.4s;
+    height: 12vh;
+}
+
+.list-items a:hover{
+    background-color: rgba(191, 139, 129, .3);
+}
+
+/* Complete styling for navbar (Cart) */
+
+.burger{
+    height: 28px;
+    width: 32px;
+    display: none;
+}
+
+.layer1, .layer2, .layer3{
+    background: #725654;
+    height: 4px;
+    width: 100%;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+.bar{
+    color: #fff;
+    background-color: #bf8b81;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 12vh;
+}
+
+.section1{
+    background: url(./images/black-forest-cakes.jpg) center center/cover;
+    height: calc(100vh - 15vh);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.cover{
+    background: rgba(242, 237, 232, 0.9);
+    height: calc(100vh - 15vh);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.half1{
+    color: #725654;
+    text-transform: capitalize;
+    padding-left: 100px;
+    width: 50%;
+}
+
+.half1 h1{
+    font-family: "Playfair Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.half1 a{
+    float: right;
+    border: 1px solid #725654;
+    font-size: 0.7em;
+    color: #725654;
+    width: 180px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56, 152, 236, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.half1 a:hover{
+    background-color: #725654;
+    color: #f2ede8;
+}
+
+.rand-img{
+    margin-left: 50px;
+    margin-right: 100px;
+    background: url(./images/rand.png) center center/cover;
+    height: 400px;
+    width: 400px;
+}
+
+
+/* Below codes due for editing */
+.section2{
+    background: rgba(242, 237, 232, 0.9);
+}
+.section2 .title{
+    text-align: left;
+    padding-left: 100px;
+    color: #725654;
+}
+
+.section2 .title h1{
+    font-size: 60px;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 400;
+    line-height: 75px;
+}
+
+.section3{
+    background-color: #bf8b81;
+    height: 60vh;
+    width: 100%;
+}
+
+.section4{
+    background-color: #fff;
+    height: 60vh;
+    width: 100%;
+}
+.products{
+    margin: 0 5em auto;
+    max-width: 1300px;
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(autofit, minmax(350px, 1fr));
+}
+
+.product-card{
+    text-align: center;
+    position: relative;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.product-card img{
+    height: 300px;
+    width: 300px;
+    transition: 0.3s linear;
+}
+
+.product-name, .product-pricing{
+    margin: 0.3em;
+}
+
+.product-pricing{
+    color: #725654;
+}
+
+.add-to-cart{
+    align-items: center;
+    justify-content: center;
+    color: #f2ede8;
+    padding: 0.2em 1em;
+    height: 30px;
+    background: #725654;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    bottom: 80px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+.product-card:hover .add-to-cart{
+    transform: translateX(0%);
+}
+
+.product-cart:hover img{
+    opacity: 0.7;
+}
+
+.add-to-cart:hover{
+    color: black;
+}
+
+.menu-sidebar{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .cart{
+        padding-right: 2em;
+    }
+    .menubar{
+        display: none;
+    }
+    .logo{
+        display: block;
+        align-self: center;
+        padding-left: 0;
+    }
+    .burger{
+        display: block;
+        align-self: center;
+        padding-right: 0;
+    }
+    .cover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .half1{
+        padding: 0;
+    }
+    .half1 h1{
+        font-size: 40px;
+    }
+    .rand-img{
+        height: 250px;
+        width: 250px;
+        padding: 0;
+        margin: 0;
+    }
+    menu-sidebar{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 11;
+        background: #ececec;
+        overflow: hidden;
+        transform: translate(-100%);
+        transition: 0.3s linear;
+    }
+    .menu-menubar{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+    }
+    .menu-list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu-sidebar .close-menu{
+        position: absolute;
+        right: 30px;
+        font-size: 1.4em;
+    }
+    .menu-list-items a{
+        color: #725654;
+    }
+    .menu-list-items a:hover{
+        color: #bf8b81;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    *{
+        font-size: 16px;
+    }
+    .section1 .banner{
+        width: 280px;
+        height: 100px;
+    }
+    .section1 .banner h1{
+        font-size: 1.2em;
+    }
+    .burger{
+        margin-left: 1em;
+        display: block;
+        width: 30px;
+    }
+    .cart-sidebar{
+        width: 100%;
+    }
+    .product{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

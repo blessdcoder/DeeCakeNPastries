@@ -1,0 +1,99 @@
+{
+    "items": [
+        {
+            "sys": {"id": 1},
+            "fields": {
+                "name": "Cookie Cake",
+                "price": 1500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/cookiecake.jpg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys": {"id": 2},
+            "fields": {
+                "name": "Cheese Cake",
+                "price": 2100,
+                "image": {"fields": {"file": {"url": "images/cheesecake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 3},
+            "fields": {
+                "name": "Carrot Cake",
+                "price": 1200,
+                "image": {"fields": {"file":{"url": "images/carrotcake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 4},
+            "fields": {
+                "name": "Coffee Cake",
+                "price": 800,
+                "image": {"fields": {"file":{"url": "images/coffeecake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 5},
+            "fields": {
+                "name": "Devil's Food Cake",
+                "price": 600,
+                "image": {"fields": {"file": {"url": "images/devilsfoodcake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 6},
+            "fields": {
+                "name": "Flourless Chocolate Cake",
+                "price": 1600,
+                "image": {"fields": {"file": {"url": "images/flourlesschocolatecake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 7},
+            "fields": {
+                "name": "Fruit Cake",
+                "price": 3400,
+                "image": {"fields": {"file": {"url": "images/fruitcake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 8},
+            "fields": {
+                "name": "Ice Cream Cake",
+                "price": 3200,
+                "image": {"fields": {"file":{"url": "images/icecreamcake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 9},
+            "fields": {
+                "name": "Sponge Cake",
+                "price": 800,
+                "image": {"fields": {"file": {"url": "images/spongecake.jpg"}}}
+            }
+        },
+
+        {
+            "sys": {"id": 10},
+            "fields": {
+                "name": "Red Velvet Cake",
+                "price": 1800,
+                "image": {"fields": {"file": {"url": "images/redvelvetcake.jpg"}}}
+            }
+        }
+    ]
+}
